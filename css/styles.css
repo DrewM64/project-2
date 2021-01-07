@@ -1,0 +1,97 @@
+/*------Base Element Styles------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.light-text {
+    color: lightslategrey;
+}
+
+h2 {
+    font-size: 0.95rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*------Base Layout Styles------*/
+
+.header-intro, 
+.contact-footer {
+    background: rgb(243, 243, 243);
+    padding: 10px;
+}
+
+#portfolio {
+    padding: 10px;
+}
+
+.name {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+}
+
+header .name,
+.main-nav a {
+	text-align: center;
+  display:block;
+  padding:10px;
+}
+
+nav li {
+    background-color: white;
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.card {
+    margin: 3em 0;
+    padding: 0 10px;
+}
+
+.main-footer .container {
+    border-top: lightgrey solid 1px;
+    margin: 10px;
+    padding: 20px 0;
+}
+
+footer .name {
+    float: left;
+}
+
+footer .return {
+    float:right;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+/*------Media Queries------*/
+
+@media (min-width: 768px) {
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+}
