@@ -5,12 +5,20 @@
 }
 
 body {
-    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 .light-text {
-    color: lightslategrey;
+    color: rgb(155, 155, 155);
+}
+
+h1, 
+h2, 
+h3, 
+p, 
+a {
+    color: rgb(85, 85, 85);
 }
 
 h2 {
@@ -18,7 +26,8 @@ h2 {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 img {
@@ -27,18 +36,26 @@ img {
 
 /*------Base Layout Styles------*/
 
+/* Darker BG for top and bottom of page */
 .header-intro, 
 .contact-footer {
     background: rgb(243, 243, 243);
     padding: 10px;
 }
 
+#intro .container {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
 #portfolio {
-    padding: 10px;
+    padding: 0 10px;
+    margin: 40px 0;
 }
 
 .name {
     margin: 0;
+    font-weight: bolder;
 }
 
 nav ul {
@@ -47,9 +64,9 @@ nav ul {
 
 header .name,
 .main-nav a {
-	text-align: center;
-  display:block;
-  padding:10px;
+    text-align: center;
+    display:block;
+    padding:10px;
 }
 
 nav li {
@@ -58,26 +75,49 @@ nav li {
     margin: 10px 0;
 }
 
+#intro img {
+    max-width: 70%;
+}
+
 .card {
     margin: 3em 0;
     padding: 0 10px;
 }
 
+.card p {
+    padding: 0 10px;
+}
+
+/* contact section */
+#contact {
+    margin: 40px 0;
+}
+
+.reach-me { /* for formating content in contact section*/
+    font-weight: bolder;
+    padding-left: 1em;
+}
+
+/* footer section */
 .main-footer .container {
     border-top: lightgrey solid 1px;
-    margin: 10px;
     padding: 20px 0;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
 }
 
 footer .name {
     float: left;
+    font-size: .9em;
 }
 
 footer .return {
     float:right;
-}
+    font-size: .75em;
+} 
 
-.desktop-nav {
+.desktop-nav { /* footer nav not shown in mobile view */
     display: none;
 }
 
@@ -86,7 +126,6 @@ footer .return {
 @media (min-width: 768px) {
 
 body {
-    width: 90%;
     margin: auto;
 }
 
