@@ -49,8 +49,8 @@ img {
 }
 
 #portfolio {
-    padding: 0 10px;
-    margin: 40px 0;
+    padding: 40px 10px;
+    /* margin: 40px 0; */
 }
 
 .name {
@@ -129,8 +129,110 @@ body {
     margin: auto;
 }
 
+.header-intro {
+    padding: 40px 20px 50px 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    background-color: rgb(243, 243, 243);
+    padding: 0 10px;
+}
+
+.main-nav a:hover {
+    color:  rgb(150, 150, 150);
+    transition: 0.3s;
+}
+
+.intro-text {
+    float: left;
+    width: 60%;
+    padding-right: 10px;
+    margin: 0;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+.intro-img {
+    float: right;
+    width: 40%;
+}
+
+/* #portfolio .container {
+    clear: both;
+} */
+
+.longcolleft {
+    float: left;
+    width: 50%;
+    margin: 0;
+}
+
+.longcolright {
+    float: right;
+    width: 50%;
+    margin: 0;
+}
+
+.card {
+    padding: 15px 10px;
+    height: 380px;
+}
+
+.card p {
+    font-size: .9em;
+    padding: 0 50px;
+}
+
+#contact {
+    margin: 50px 0;
+    padding: 0 70px;
+}
+
+#contact h2 {
+    font-size: .9em;
+    margin-bottom: 50px;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+.invitation {
+    margin-bottom: 50px;
+}
+
+.main-footer .container {
+    width: 95%;
+    display: inline-block;
+}
+
+.desktop-nav { /*navigation at bottom-right of window */
+    float:right;
+    font-size: .75em;
+    display: inline;
+    width: auto;
+} 
+
+.desktop-nav li{
+    display: inline;
+    padding-left: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.return { /* "BACK TO TOP" not shown in desktop view */
+    display: none;
+}
+
 }
 
 @media (min-width: 1024px) {
 
 }
+
+/* ----Clearfix---- */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
