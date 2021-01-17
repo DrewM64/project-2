@@ -44,6 +44,13 @@ img {
 
 /* Darker BG for top and bottom of page */
 
+.container {
+    width: 99%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
 .header-intro, 
 .contact-footer {
     background: rgb(243, 243, 243);
@@ -259,6 +266,10 @@ body {
     .body {
         background: rgb(243, 243, 243);
     }
+
+header {
+    height: 200px;
+}
 
     .header-intro {
         padding: 40px 40px 50px;
